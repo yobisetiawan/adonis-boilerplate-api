@@ -21,5 +21,17 @@
 import Route from '@ioc:Adonis/Core/Route'
 
 Route.get('/', async () => {
-  return { hello: 'world' }
+  return { app: 'adonis-boilerplate-api' }
 })
+
+Route.group(() => {
+  Route.group(() => {
+    Route.post('login', 'AuthController.login')
+    Route.post('register', 'AuthController.register')
+    Route.post('logout', 'AuthController.logout').middleware('auth')
+  }).prefix('/auth')
+
+  Route.group(() => {
+    Route.get('current-user', 'CurrentUsersController.show')
+  }).middleware('auth')
+}).prefix('/api/v1')
