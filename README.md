@@ -7,3 +7,6 @@ Support
 - Mailer
 - SocketIO
 
+Run App
+1. node ace migartion:run
+2. yarn dev
