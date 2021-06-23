@@ -6,6 +6,7 @@ Support
 - Auth Bearer
 - Mailer
 - SocketIO
+- Storage local, s3/DO Space
 
 Run App
 1. node ace migartion:run
