@@ -28,6 +28,8 @@
     "@adonisjs/lucid": "^15.0.1",
     "@adonisjs/mail": "^7.2.1",
     "@adonisjs/repl": "^3.0.0",
+    "@slynova/flydrive": "^1.0.3",
+    "@slynova/flydrive-s3": "^1.0.3",
     "@types/socket.io": "^3.0.2",
     "luxon": "^1.27.0",
     "pg": "^8.6.0",
