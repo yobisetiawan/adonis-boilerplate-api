@@ -2,11 +2,11 @@
 AdonisJS starter api 
 
 Support 
-- DB postgresql
+- DB Postgresql
 - Auth Bearer
 - Mailer
 - SocketIO
-- Storage local, s3/DO Space
+- Storage Local, S3/DO Space
 - Resize Image
 
 Run App
