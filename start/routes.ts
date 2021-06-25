@@ -35,5 +35,6 @@ Route.group(() => {
     Route.get('current-user', 'CurrentUsersController.show')
     Route.post('upload', 'FilesController.upload')
     Route.post('upload-cloud', 'FilesController.cloudUpload')
+    Route.post('upload-resize-cloud', 'FilesController.cloudResizeUpload')
   }).middleware('auth')
 }).prefix('/api/v1')
