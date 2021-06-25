@@ -6,7 +6,7 @@ export interface IresizeOption {
 }
 
 export class ImageService {
-  public async resizeImage(file: any, option: IresizeOption) {
+  public async resize(file: any, option: IresizeOption) {
     if (file) {
       return await sharp(file.tmpPath).resize(option.height, option.width).toBuffer()
     }

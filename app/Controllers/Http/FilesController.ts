@@ -26,7 +26,7 @@ export default class FilesController {
     return this.storage.s3PublicUpload(
       'test10.jpg',
       coverImage,
-      this.image.resizeImage(coverImage, { height: 100, width: 100 })
+      this.image.resize(coverImage, { height: 100, width: 100 })
     )
   }
 }
