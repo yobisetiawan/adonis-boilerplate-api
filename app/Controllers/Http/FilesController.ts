@@ -17,4 +17,13 @@ export default class FilesController {
     const coverImage = request.file('cover_image')
     return this.storage.s3PublicUpload('test10.jpg', coverImage)
   }
+
+  public async cloudResizeUpload({ request }: HttpContextContract) {
+    const coverImage = request.file('cover_image')
+    return this.storage.s3ResizeUpload(
+      'test9.jpg',
+      coverImage,
+      this.storage.resizeImage(coverImage)
+    )
+  }
 }
