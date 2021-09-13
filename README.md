@@ -10,5 +10,7 @@ Support
 - Resize Image
 
 Run App
-1. node ace migartion:run
-2. yarn dev
+1. yarn install
+2. setup env
+3. node ace migartion:run
+4. yarn dev
